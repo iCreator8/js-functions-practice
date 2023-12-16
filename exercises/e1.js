@@ -91,7 +91,7 @@ const f = {
   logMyMessage: logMyMessage || undefined,
   logMessageWithMyName: logMessageWithMyName || undefined,
   logMyInfo: logMyInfo || undefined
-}
+};
 
 export { f };
 
