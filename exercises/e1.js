@@ -15,12 +15,18 @@
 
 // Your code goes here
 
+/* function logMessage() {
+  console.log('Hello, World!');
+}
+
+logMessage(); */
+
+
 function logMessage() {
   console.log('Hello, World!');
 }
 
 logMessage();
-
 
 /**
  * =============================================================
@@ -34,12 +40,17 @@ logMessage();
 */
 
 // Your code goes here...
-
 function logMyMessage(message) {
-console.log(message);
+  console.log(message);
 }
 
 logMyMessage('I log my first message!');
+
+/* function logMyMessage(message) {
+console.log(message);
+}
+
+logMyMessage('I log my first message!'); */
 
 /**
  * ===============================================================
@@ -54,11 +65,17 @@ logMyMessage('I log my first message!');
 // Your code goes here...
 
 function logMessageWithMyName(myName) {
-console.log('My name is ' + myName + '!');
+  console.log('My name is ' + myName + '!');
 }
 
 logMessageWithMyName('Iskandar');
 
+/* function logMessageWithMyName(myName) {
+console.log('My name is ' + myName + '!');
+}
+
+logMessageWithMyName('Iskandar');
+ */
 /**
  * ==============================================================
  * Create a function that works as follows:
@@ -71,11 +88,17 @@ logMessageWithMyName('Iskandar');
 */
 
 // Your code goes here...
+
 function logMyInfo(name, age) {
-  console.log('My name is ' + name + '.' + ' I am ' + age + ' years old!');
+  console.log('My name is ' + name + '. I am ' + age + ' years old!');
 }
 
 logMyInfo('Iskandar', 37);
+/* function logMyInfo(name, age) {
+  console.log('My name is ' + name + '.' + ' I am ' + age + ' years old!');
+}
+
+logMyInfo('Iskandar', 37); */
 
 
 

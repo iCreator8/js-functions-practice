@@ -13,9 +13,17 @@
 // Your function code starts here...
 function rectArea(sideA, sideB) {
   return sideA * sideB;
-}
+} 
 
 rectArea(3, 2);
+
+// console.log(rectArea(3, 2));
+
+/* function rectArea(sideA, sideB) {
+  return sideA * sideB;
+} */
+
+// rectArea(3, 2);
 // console.log(rectArea(3, 2));
 
 
@@ -27,6 +35,12 @@ rectArea(3, 2);
 var room1 = rectArea(4, 6);
 var room2 = rectArea(13, 3);
 var room3 = rectArea(4, 8);
+
+// console.log(room1, room2, room3);
+
+/* var room1 = rectArea(4, 6);
+var room2 = rectArea(13, 3);
+var room3 = rectArea(4, 8); */
 
 // console.log(room1, room2, room3);
 
@@ -45,7 +59,16 @@ function totalRoomsArea(area1, area2, area3) {
   return area1 + area2 + area3;
 }
 
+// totalRoomArea(room1, room2, room3);
 totalRoomsArea(24, 35, 24);
+// console.log(totalRoomArea(24, 35, 24));
+
+/* 
+function totalRoomsArea(area1, area2, area3) {
+  return area1 + area2 + area3;
+} */
+
+// totalRoomsArea(24, 35, 24);
 // console.log(totalRoomsArea(24, 35, 24));
 
 

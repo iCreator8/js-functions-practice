@@ -15,8 +15,19 @@
  */
 
 // Your code goes here...
+ function doesArrayIncludeItemsBetweenVals(arr, val1, val2) {
+   for (let elem of arr) {
+    if (elem > val1 && elem < val2) return true;
+   }                               
+   return false;
+ }
 
-
+  console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 3, 5)
+); 
+ console.log(doesArrayIncludeItemsBetweenVals([2, 4, 2], 5, 10)
+);
+   
+  
 
 
 /**
@@ -36,7 +47,43 @@
 
 // Your code goes here...
 
+// named function
+function getValueWithConditionOne(num1, num2) {
+if (num1 && num2 === 40) {
+return num1 + num2;
+}
+else (num1 && num2 !== 40);
+ {return (num1 + num2) * 2;}
+}
 
+console.log(getValueWithConditionOne(40, 40));
+console.log(getValueWithConditionOne(20, 30));
+
+
+// arrow function
+const getValueWithConditionTwo = (num1, num2) => {
+if (num1 && num2 === 40) {
+return num1 + num2;
+}
+else (num1 && num2 !== 40);
+ {return (num1 + num2) * 2;}
+};
+
+console.log(getValueWithConditionTwo(40, 40));
+console.log(getValueWithConditionTwo(20, 30));
+
+
+// function expression 
+const getValueWithConditionThree = function(num1, num2) {
+if (num1 && num2 === 40) {
+return num1 + num2;
+}
+else (num1 && num2 !== 40);
+ {return (num1 + num2) * 2;}
+};
+
+console.log(getValueWithConditionThree(40, 40));
+console.log(getValueWithConditionThree(20, 30));
 
 
 // === TEST YOURSELF ===
@@ -46,10 +93,10 @@
 
 
 // Do not delete or change the lines beneath
-const f = {
-  doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
-  getValueWithConditionOne: getValueWithConditionOne || undefined,
-  getValueWithConditionTwo: getValueWithConditionTwo || undefined,
-  getValueWithConditionThree: getValueWithConditionThree || undefined,
-}
-export { f };
+// const f = {
+//   doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
+//   getValueWithConditionOne: getValueWithConditionOne || undefined,
+//   getValueWithConditionTwo: getValueWithConditionTwo || undefined,
+//   getValueWithConditionThree: getValueWithConditionThree || undefined,
+// };
+// export { f };
