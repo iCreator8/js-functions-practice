@@ -49,11 +49,11 @@
 
 // named function
 function getValueWithConditionOne(num1, num2) {
-if (num1 && num2 === 40) {
-return num1 + num2;
-}
-else (num1 && num2 !== 40);
- {return (num1 + num2) * 2;}
+  let result;
+if (num1 === 40 && num2 === 40) {
+result = num1 + num2;
+} else {result = (num1 + num2) * 2;}
+return result;
 }
 
 console.log(getValueWithConditionOne(40, 40));
@@ -62,11 +62,11 @@ console.log(getValueWithConditionOne(20, 30));
 
 // arrow function
 const getValueWithConditionTwo = (num1, num2) => {
-if (num1 && num2 === 40) {
-return num1 + num2;
-}
-else (num1 && num2 !== 40);
- {return (num1 + num2) * 2;}
+  let result;
+if (num1 === 40 && num2 === 40) {
+result = num1 + num2;
+} else {result = (num1 + num2) * 2;}
+return result;
 };
 
 console.log(getValueWithConditionTwo(40, 40));
@@ -75,11 +75,11 @@ console.log(getValueWithConditionTwo(20, 30));
 
 // function expression 
 const getValueWithConditionThree = function(num1, num2) {
-if (num1 && num2 === 40) {
-return num1 + num2;
-}
-else (num1 && num2 !== 40);
- {return (num1 + num2) * 2;}
+  let result;
+if (num1 === 40 && num2 === 40) {
+result = num1 + num2;
+} else {result = (num1 + num2) * 2;}
+return result;
 };
 
 console.log(getValueWithConditionThree(40, 40));
@@ -93,10 +93,10 @@ console.log(getValueWithConditionThree(20, 30));
 
 
 // Do not delete or change the lines beneath
-// const f = {
-//   doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
-//   getValueWithConditionOne: getValueWithConditionOne || undefined,
-//   getValueWithConditionTwo: getValueWithConditionTwo || undefined,
-//   getValueWithConditionThree: getValueWithConditionThree || undefined,
-// };
-// export { f };
+const f = {
+  doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
+  getValueWithConditionOne: getValueWithConditionOne || undefined,
+  getValueWithConditionTwo: getValueWithConditionTwo || undefined,
+  getValueWithConditionThree: getValueWithConditionThree || undefined,
+};
+export { f };
